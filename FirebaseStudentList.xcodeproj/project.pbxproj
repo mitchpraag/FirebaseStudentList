@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		AA3DDA7F1F2ABE3800D0ACE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3DDA7E1F2ABE3800D0ACE4 /* AppDelegate.swift */; };
-		AA3DDA811F2ABE3800D0ACE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3DDA801F2ABE3800D0ACE4 /* ViewController.swift */; };
 		AA3DDA841F2ABE3800D0ACE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA3DDA821F2ABE3800D0ACE4 /* Main.storyboard */; };
 		AA3DDA861F2ABE3800D0ACE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3DDA851F2ABE3800D0ACE4 /* Assets.xcassets */; };
 		AA3DDA891F2ABE3800D0ACE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA3DDA871F2ABE3800D0ACE4 /* LaunchScreen.storyboard */; };
 		AA3DDA941F2ABE3800D0ACE4 /* FirebaseStudentListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3DDA931F2ABE3800D0ACE4 /* FirebaseStudentListTests.swift */; };
 		AA3DDA9F1F2ABE3800D0ACE4 /* FirebaseStudentListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3DDA9E1F2ABE3800D0ACE4 /* FirebaseStudentListUITests.swift */; };
+		AA3DDAAD1F2ABE7F00D0ACE4 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3DDAAC1F2ABE7F00D0ACE4 /* Student.swift */; };
+		AA3DDAAF1F2ABF4E00D0ACE4 /* networkController .swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3DDAAE1F2ABF4E00D0ACE4 /* networkController .swift */; };
+		AA3DDAB11F2AC76600D0ACE4 /* studentController .swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3DDAB01F2AC76600D0ACE4 /* studentController .swift */; };
+		AA3DDAB31F2AE8A600D0ACE4 /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3DDAB21F2AE8A600D0ACE4 /* StudentTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		AA3DDA7B1F2ABE3800D0ACE4 /* FirebaseStudentList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseStudentList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3DDA7E1F2ABE3800D0ACE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA3DDA801F2ABE3800D0ACE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA3DDA831F2ABE3800D0ACE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA3DDA851F2ABE3800D0ACE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA3DDA881F2ABE3800D0ACE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		AA3DDA9A1F2ABE3800D0ACE4 /* FirebaseStudentListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseStudentListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3DDA9E1F2ABE3800D0ACE4 /* FirebaseStudentListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStudentListUITests.swift; sourceTree = "<group>"; };
 		AA3DDAA01F2ABE3800D0ACE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA3DDAAC1F2ABE7F00D0ACE4 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Student.swift; path = ../Student.swift; sourceTree = "<group>"; };
+		AA3DDAAE1F2ABF4E00D0ACE4 /* networkController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "networkController .swift"; path = "../networkController .swift"; sourceTree = "<group>"; };
+		AA3DDAB01F2AC76600D0ACE4 /* studentController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "studentController .swift"; sourceTree = "<group>"; };
+		AA3DDAB21F2AE8A600D0ACE4 /* StudentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,12 @@
 		AA3DDA7D1F2ABE3800D0ACE4 /* FirebaseStudentList */ = {
 			isa = PBXGroup;
 			children = (
+				AA3DDAAE1F2ABF4E00D0ACE4 /* networkController .swift */,
+				AA3DDAB01F2AC76600D0ACE4 /* studentController .swift */,
 				AA3DDA7E1F2ABE3800D0ACE4 /* AppDelegate.swift */,
-				AA3DDA801F2ABE3800D0ACE4 /* ViewController.swift */,
+				AA3DDAAC1F2ABE7F00D0ACE4 /* Student.swift */,
 				AA3DDA821F2ABE3800D0ACE4 /* Main.storyboard */,
+				AA3DDAB21F2AE8A600D0ACE4 /* StudentTableViewController.swift */,
 				AA3DDA851F2ABE3800D0ACE4 /* Assets.xcassets */,
 				AA3DDA871F2ABE3800D0ACE4 /* LaunchScreen.storyboard */,
 				AA3DDA8A1F2ABE3800D0ACE4 /* Info.plist */,
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					AA3DDA7A1F2ABE3800D0ACE4 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZB55E63K58;
 						ProvisioningStyle = Automatic;
 					};
 					AA3DDA8E1F2ABE3800D0ACE4 = {
@@ -259,7 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA3DDA811F2ABE3800D0ACE4 /* ViewController.swift in Sources */,
+				AA3DDAAF1F2ABF4E00D0ACE4 /* networkController .swift in Sources */,
+				AA3DDAAD1F2ABE7F00D0ACE4 /* Student.swift in Sources */,
+				AA3DDAB11F2AC76600D0ACE4 /* studentController .swift in Sources */,
+				AA3DDAB31F2AE8A600D0ACE4 /* StudentTableViewController.swift in Sources */,
 				AA3DDA7F1F2ABE3800D0ACE4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZB55E63K58;
 				INFOPLIST_FILE = FirebaseStudentList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MitchPraag.FirebaseStudentList;
@@ -426,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZB55E63K58;
 				INFOPLIST_FILE = FirebaseStudentList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MitchPraag.FirebaseStudentList;
